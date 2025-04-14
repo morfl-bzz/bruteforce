@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Login – SecureBank</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/unsafe.css') }}">
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>UnSecureBank</h1>
+    <p class="subtitle">Online Banking – Unsichere Demo</p>
+  </header>
+  <main>
+    <form id="loginForm" method="POST">
+      <h2>Login</h2>
+      <label for="username">Benutzername:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Passwort:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">Einloggen</button>
+      <p id="message">{{ message }}</p>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2025 SecureBank AG</p>
+  </footer>
+</div>
+<script src="{{ url_for('static', filename='js/unsafe.js') }}"></script>
+</body>
+</html>

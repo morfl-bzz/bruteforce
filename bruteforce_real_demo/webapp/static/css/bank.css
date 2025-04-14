@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #0d47a1;
+    font-size: 32px;
+    margin: 0;
+}
+
+header .subtitle {
+    color: #555;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* Account Overview */
+.account-overview {
+    background-color: #e3f2fd;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.account-overview h2 {
+    color: #0d47a1;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.account-overview p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Transactions Table */
+.transactions h2 {
+    color: #0d47a1;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.transactions table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.transactions th, .transactions td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.transactions th {
+    background-color: #0d47a1;
+    color: #fff;
+    font-weight: bold;
+}
+
+.transactions tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.transactions tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Account Details */
+.account-details {
+    background-color: #f1f8e9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.account-details h2 {
+    color: #33691e;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.account-details p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #888;
+}

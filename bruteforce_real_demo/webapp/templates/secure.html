@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Sicheres Login – SecureBank</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/secure.css') }}">
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>SecureBank</h1>
+    <p class="subtitle">Online Banking – Sicher & Einfach</p>
+  </header>
+  <main>
+    <form id="loginForm" method="POST">
+      <h2>Login</h2>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">Login</button>
+      <p id="message">{{ message }}</p>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2025 SecureBank AG</p>
+  </footer>
+</div>
+<script src="{{ url_for('static', filename='js/secure.js') }}"></script>
+</body>
+</html>
